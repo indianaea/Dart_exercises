@@ -43,5 +43,9 @@ void main(){
     [ 7, 5, 3, 1 ]
   ];
 
-
+  for(List<int> innerList in myList){
+    //print(innerList);
+    for(int list in innerList)
+      print(list);
+  }
 }

@@ -42,5 +42,12 @@ void main() {
 }
 
 bool is_valid_matrix(List<List<int>> matrix) {
-
+  for(List<int> row in matrix){
+    print(matrix[0]);
+    print(matrix[0].length);
+    if(row.length != matrix[0].length){
+      return false;
+    }
+  }
+  return true;
 }

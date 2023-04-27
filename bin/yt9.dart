@@ -14,6 +14,17 @@
 
  */
 
+List<int> GetNumbersBiggerThan(List<List<int>> myList, int numberCheck){
+  List<int> greaterThan = [];
+  for(List<int> innerList in myList){
+    for(int number in innerList){
+      if(number > numberCheck){
+        greaterThan.add(number);
+      }
+    }
+  }
+  return greaterThan;
+}
 
 void main(){
   List<List<int>> myList = [
@@ -22,5 +33,8 @@ void main(){
     [ 8, 6, 4, 2 ],
     [ 7, 5, 3, 1 ]
   ];
+
+  List<int> theBestList = GetNumbersBiggerThan(myList, 6);
+  print(theBestList);
 
 }

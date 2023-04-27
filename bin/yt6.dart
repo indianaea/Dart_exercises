@@ -23,5 +23,12 @@ void main(){
     [4, 8, 12, 16, 20]
   ];
 
+  for(int idx=0; idx<=0; idx++)
+    print(myList[0][2]);
+    print(myList[1][2]);
+    print(myList[2][2]);
+
+  for(List list in myList)
+    print(list[2]);
 
 }
